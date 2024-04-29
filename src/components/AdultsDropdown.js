@@ -4,7 +4,7 @@ import { RoomContext } from '../context/RoomContext';
 // headless ui menu
 import { Menu } from '@headlessui/react';
 // icons
-import { BsChevronDown, BsMenuButton } from 'react-icons/bs';
+import { BsChevronDown } from 'react-icons/bs';
 
 const lis = [
   { name: '1 Adults'},

@@ -63,6 +63,7 @@ const HeroSlider = () => {
             <img 
               className='object-cover h-full w-full'
               src={bg}
+              alt='room-images'
             />
           </div>
 
