@@ -1,7 +1,11 @@
 import React from 'react';
 
 const RoomDetails = () => {
-  return <div>RoomDetails</div>;
+  return (
+    <>
+      Hello
+    </>
+  );
 };
 
 export default RoomDetails;

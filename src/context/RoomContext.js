@@ -8,7 +8,7 @@ export const RoomContext = createContext();
 const RoomProvider = ({ children }) => {
   const [rooms, setRooms] = useState(roomData);
   const [adults, setAdults] = useState('1 Adult');
-  const [kids, setkids] = useState('0 Kids');
+  const [kids, setKids] = useState('0 Kids');
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
@@ -20,13 +20,13 @@ const RoomProvider = ({ children }) => {
 
     const newRooms = roomData.filter((room) => {
       return total <= room.maxPerson;
-    })
+    });
     setRooms(newRooms);
   };
 
   return (
-    <RoomContext.Provider value={{ rooms, adults, setAdults, kids,
-    setkids, handleClick }}>
+    <RoomContext.Provider 
+    value={{ rooms, adults, setAdults, kids, setKids, handleClick }}>
       {children}
     </RoomContext.Provider>
   );

@@ -11,23 +11,23 @@ import RoomDetails from './pages/RoomDetails';
 // react router
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-const router = createBrowserRouter ([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />
   },
   {
-    paht: '/room/:id',
+    paht: '/room/id',
     element: <RoomDetails />,
   }
 ]);
 
 
 const App = () => {
-  return(
+  return (
     <div>
       <Header />
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
       <Footer />
     </div>
   )
